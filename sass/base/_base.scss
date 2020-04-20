@@ -24,5 +24,9 @@ html {
 }
 
 body {
-	padding: 30px;
+	padding: 3rem;
+
+	@include respond(tab-port) {
+		padding: 0;
+	}
 }

@@ -138,7 +138,13 @@ html {
 }
 
 body {
-  padding: 30px;
+  padding: 3rem;
+}
+
+@media (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
 }
 
 body {
@@ -160,7 +166,7 @@ body {
 .heading-primary--main {
   display: block;
   letter-spacing: 3.5rem;
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 400;
   margin-right: -3.5rem;
   -webkit-animation-name: moveInLeft;
@@ -169,6 +175,13 @@ body {
           animation-duration: 1s;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
+}
+
+@media (max-width: 37.5em) {
+  .heading-primary--main {
+    letter-spacing: 1rem;
+    font-size: 5rem;
+  }
 }
 
 .heading-primary--sub {
@@ -185,6 +198,13 @@ body {
           animation-timing-function: ease-out;
 }
 
+@media (max-width: 37.5em) {
+  .heading-primary--sub {
+    letter-spacing: .5rem;
+    font-size: 1.6rem;
+  }
+}
+
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
@@ -198,6 +218,19 @@ body {
   -webkit-transition: all .2s;
   transition: all .2s;
   -webkit-backface-visibility: hidden;
+}
+
+@media (max-width: 56.25em) {
+  .heading-secondary {
+    letter-spacing: .1rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 2rem;
+  }
 }
 
 .heading-secondary:hover {
