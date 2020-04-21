@@ -1,4 +1,6 @@
 .navigation {
+	z-index: 500;
+
 	&__checkbox {
 		display: none;
 	}
@@ -36,7 +38,7 @@
 		right: 6.5rem;
 		background-image: radial-gradient($color-primary-light, $color-primary-dark);
 		z-index: 1000;
-		transition: all .4s;
+		transition: all .5s;
 		
 		@include respond(tab-port) {
 			top: 4.5rem;
